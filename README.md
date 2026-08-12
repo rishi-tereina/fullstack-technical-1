@@ -49,7 +49,7 @@ src/
 
 ### Conventions worth knowing
 
-These mirror how the real codebase is written — follow them or argue with them, either is fine:
+These mirror how the real codebase is written — follow them or use your own, either is fine:
 
 - **Zod owns validation.** Schemas are built by a `buildZ<Name>Form(messages)` factory that takes
   already-translated strings, so no user-facing copy is hardcoded in a schema. There is no second
