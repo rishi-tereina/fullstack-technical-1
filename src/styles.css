@@ -1,0 +1,38 @@
+:root {
+  --text: #1d2d3e;
+  --muted: #5b6b7d;
+  --border: #d4dae2;
+  --danger: #b8121b;
+  --accent: #0a6ed1;
+  --bg: #f5f6fa;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--text);
+}
+
+body { margin: 0; background: var(--bg); }
+
+.app { max-width: 42rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+.form { background: #fff; border: 1px solid var(--border); border-radius: 0.5rem; padding: 1.75rem; }
+.form-header h1 { margin: 0 0 0.25rem; font-size: 1.5rem; }
+.form-subtitle { margin: 0 0 1.5rem; color: var(--muted); font-size: 0.875rem; }
+.form-section { border-top: 1px solid var(--border); padding-top: 1.25rem; margin-top: 1.25rem; }
+.form-section h2 { font-size: 1rem; margin: 0 0 1rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
+.field-label { font-size: 0.8125rem; font-weight: 600; }
+.field-input {
+  padding: 0.5rem 0.625rem; border: 1px solid var(--border); border-radius: 0.25rem;
+  font: inherit; background: #fff;
+}
+.field-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.field-input--invalid { border-color: var(--danger); }
+.field-error { color: var(--danger); font-size: 0.75rem; }
+
+.form-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
+.form-actions button {
+  padding: 0.55rem 1.25rem; border: 0; border-radius: 0.25rem;
+  background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+.form-actions button:disabled { opacity: 0.6; cursor: default; }
+.form-success { color: #12752e; font-size: 0.875rem; }
