@@ -89,6 +89,28 @@ A short list of German registry courts, if you want one:
 Mexican states, if you want them, are fine to stub with three or four entries — a complete list
 isn't the point of the exercise.
 
+### Design and UX changes are welcome
+
+The current styling is deliberately plain. It's scaffolding, not a design system, and none of it is
+sacred. **If you see something that would make this form better for the person filling it in, change
+it — or tell us what you'd change.**
+
+That covers labels, helper text and error wording; how fields are grouped and ordered; when and how
+validation feedback appears; and the layout itself. Adding a country selector is part of the task, so
+how that control behaves is fair game too.
+
+Two things to be clear about, so this doesn't eat your clock:
+
+- **You're not being assessed on CSS craft**, and we're not looking for a visual redesign. Saying
+  *"I'd change X because Y"* counts for as much as building it. If a change is more than a couple of
+  minutes, describe it instead.
+- **Treat it as extra credit.** Nail the structure and leave the styling exactly as it is, and
+  you've done well. Anything you improve here is upside on top of that.
+
+We mention it because the person on the other side of this form is a business owner assembling
+documents they may not have to hand, in a country whose paperwork they know far better than we do.
+Noticing where that gets hard is part of the job.
+
 ### How this is assessed
 
 **You are not expected to finish.** Scope is deliberately larger than the time allows.
@@ -102,5 +124,5 @@ Two questions worth having an answer to:
 1. What does adding the *fourth* country cost, in your design?
 2. What happens to data the user has already entered when they change the country?
 
-You may add, move, rename, or delete anything in `src/`. Keeping the existing tests passing is
-good, but changing them is fine if you explain why.
+You may add, move, rename, or delete anything in `src/` — including the markup and CSS. Keeping the
+existing tests passing is good, but changing them is fine if you explain why.
